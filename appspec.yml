@@ -13,8 +13,8 @@ hooks:
   ApplicationStop:
     - location: ./scripts/ApplicationStop.sh
       timeout: 3600
-      runas: codedeployuser
+      runas: root
   ApplicationStart:
-    - location: Scripts/MonitorService.sh
+    - location: Scripts/ApplicationStart.sh
       timeout: 3600
-      runas: codedeployuser
+      runas: root
